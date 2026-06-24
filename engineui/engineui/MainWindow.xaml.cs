@@ -20,5 +20,9 @@ namespace engineui
         {
             InitializeComponent();
         }
+        private void btnKlik_Click(object sender, RoutedEventArgs e)
+        {
+            txtHalo.Text = "Halo, Danar! Selamat Belajar WPF. ";
+        }
     }
 }
