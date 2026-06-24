@@ -1,11 +1,10 @@
 [workspace]
 members = [
     "enginecore",
-    "engineui",
     "enginelibs"
 ]
 default-members = [
     "enginecore",
-    "engineui"
+    "enginelibs"
 ]
 resolver = "3"

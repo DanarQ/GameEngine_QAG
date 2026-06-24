@@ -1,8 +1,0 @@
-[package]
-name = "engineui"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-eframe = "0.34.3"
-enginelibs = { version = "0.1.0", path = "../enginelibs" }
