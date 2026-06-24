@@ -1,0 +1,21 @@
+# Visual Studio
+.vs/
+*.sln.docstates
+*.user
+*.suo
+*.cache
+*.log
+
+# Build outputs
+bin/
+obj/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# VS Code
+.vscode/
+
+# Rider / ReSharper
+*.DotSettings.user
