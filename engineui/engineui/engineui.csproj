@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -8,4 +8,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <!-- Otomatisasi Build Rust & Salin DLL ke folder Output WPF -->
+  <Target Name="BuildRustEngine" BeforeTargets="BeforeBuild">
+    <!-- Menjalankan perintah 'cargo build' di workspace utama Rust -->
+    <Exec Command="cargo build --manifest-path &quot;$(ProjectDir)..\..\Cargo.toml&quot;" />
+    
+    <!-- Menyalin file enginelibs.dll ke direktori output WPF (bin/Debug/...) -->
+    <Copy SourceFiles="$(ProjectDir)..\..\target\debug\enginelibs.dll" 
+          DestinationFolder="$(TargetDir)" 
+          SkipUnchangedFiles="true" />
+  </Target>
+
 </Project>
+
