@@ -8,8 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <TextBlock Name="txtHalo" Text="Selamat Datang" FontSize="20px" Margin="10"/>
-            <Button Name="btnklik" Content="klik me" Click="btnKlik_Click" Width="100" Height="30"/>
+            <TextBlock Name="txtAdd" Text="Test penambahan" FontSize="20px" Margin="10"/>
+            <Button Name="add_btn" Content="klik me" Click="add_btn_click" Width="100" Height="30"/>
+            <TextBlock Name="txtSubs" Text="Test pengurangan" FontSize="20px" Margin="10"/>
+            <Button Name="subs_btn" Content="klik me" Click="subs_btn_Click" Width="100" Height="30"/>
+
         </StackPanel>
     </Grid>
 </Window>
